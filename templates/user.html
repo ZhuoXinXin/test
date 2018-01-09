@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block header %}
+<h2>会员信息</h2>
+<p>用户名为：{{user}}</p>
+{% end %}
+{% block body %}
+    {% for one in user %}
+        <li>username:{{one[0][0]}}</li>
+        <li>password:{{one[0][1]}}</li>
+    {% end %}
+{% end %}

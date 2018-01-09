@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block header %}
+<h2>用户注册</h2>
+{% end %}
+{% block body %}
+<form method="POST">
+    <p><span>用户名:</span><input type="text" id="username"></p>
+    <p><span>密&ensp;码:</span><input type="password" id="password"></p>
+    <p><input type="BUTTON" id="regist" value="注册">
+    <p><a href="login" class="button">登录</a></p>
+</form>
+{% end %}
